@@ -1,0 +1,47 @@
+:root {
+    --cor-fundo: #0B0D20;
+    --cor-fundo-dividido: #040a33;
+    --cor-principal: #0B0D20;
+    --cor-secundaria: #040a33; 
+    --cor-destaque: #ffffff;
+    --cor-texto: #ffffff;
+    --cor-texto-hover: #cccccc; 
+}
+
+body {
+    background: linear-gradient(45deg, var(--cor-fundo) 50%, var(--cor-fundo-dividido) 50%);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-hover);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
